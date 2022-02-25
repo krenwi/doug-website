@@ -1,0 +1,267 @@
+<!--
+
+    Uses Bulma and Bulma start to generate css and js files. Licensed under MIT, see \licenses\bulma LICENSE
+
+    Icons from ionicons.com, licenced under MIT, see \licenses/ionicon LICENCE
+
+    Design and all the rest: copyright 2021 (c) Matthew Askes
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT88K4Q6LZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-TT88K4Q6LZ');
+    </script>
+
+<!--    canonical page-->
+    <link rel="canonical" href="https://matthewaskes.nz/" />
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description"
+          content="The personal homepage and portfolio for Douglas Renwick. This site contains information about Douglas Renwick along with his thesis"/>
+    <title>Homepage | Douglas Renwick</title>
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="icon" type="image/png" href="favicon.ico"/>
+    <!--    <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>-->
+</head>
+
+<body>
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <h1 class="title is-3">Douglas</h1>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#about"> About </a>
+                <a class="navbar-item" href="#projects"> Projects </a>
+                <a class="navbar-item" href="#research"> Research </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="hero is-large">
+    <div class="hero-body has-text-centered">
+        <h1 class="title is-1">Hi, I'm Douglas Renwick</h1>
+        <p class="subtitle">Honours student in mathematics at Victoria University of Wellington.</p>
+    </div>
+</section>
+
+<section class="container">
+    <section class="section" id="about">
+        <h1 class="title is-2">About Me</h1>
+        <hr>
+        <div class="content">
+            <!--            What do I do-->
+            <h2>Bio</h2>
+            <p>
+                I was born in Tauranga, but currently reside in Wellington, NZ. I moved to Wellington to study a BSc at
+                Victoria University of Wellington (VUW), and never left. I have a passion for mathematics and computer
+                science, but am currently studying towards a Msc in mathematics.
+                My primary areas of research involves algorithmic graph theory, graph games, and computable
+                combinatorics.
+            </p>
+
+            <h2>Education</h2>
+
+            <div class="card large ">
+                <div class="card-content">
+                    <div class="columns">
+                        <div class="column is-2">15 MAY 2019</div>
+                        <div class="column">
+                            <p class="title is-5 no-padding">Bachelor of Science</p>
+                            <p class="subtitle is-6"><span
+                                    class="is-small-caps">Victoria University of Wellington</span>, Wellington</p>
+                            <p> Majors: Computer Science and Mathematics</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card large ">
+                <div class="card-content">
+                    <div class="columns">
+                        <div class="column is-2">15 FEB 2021</div>
+                        <div class="column">
+                            <p class="title is-5 no-padding">Bachelor of Science with First Class Honors</p>
+                            <p class="subtitle is-6"><span
+                                    class="is-small-caps">Victoria University of Wellington</span>, Wellington</p>
+                            <p> Major: Mathematics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--            <div class="card large ">-->
+            <!--                <div class="card-content">-->
+            <!--                    <div class="columns">-->
+            <!--                        <div class="column is-2">2022 </div>-->
+            <!--                        <div class="column">-->
+            <!--                            <p class="title is-5 no-padding">Master of Science</p>-->
+            <!--                            <p class="subtitle is-6">Victoria University of Wellington, Wellington</p>-->
+            <!--                            <p> Major: Mathematics</p>-->
+
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+        </div>
+    </section>
+    <section class="section" id="projects">
+        <h1 class="title is-2">Projects</h1>
+        <hr>
+        <div id="project_cards" class="row columns is-multiline is-centered">
+            <div class="column is-one-third">
+                <div class="card large">
+                    <div class="card-image">
+                        <figure class="image "><img src="res/vuwthesis.png"
+                                                    alt="Title page generated by vuwthesis class"></figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-4 no-padding">VUW Thesis</p>
+                        <p class="subtitle is-6">A latex class for styling a MSc or PhD thesis at VUW</p>
+                        <div class="content">
+                            This is an outgrowth of my MSc thesis. I found that the available template was lacking, so I
+                            made my own.
+                        </div>
+                        <a href="https://github.com/askes5/vuwthesis" class="button" rel="nofollow noopener noreferrer"
+                           target="_blank" onclick="gtag('event', 'goto_github' , {'page': 'vuwthesis'})">
+                            Get on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card large">
+                    <div class="card-image">
+                        <figure class="image"><img src="res/Graph_Blitz.png"
+                                                   alt="Graph Blitz logo and title"></figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-4 no-padding">Graph Blitz</p>
+                        <p class="subtitle is-6">A mobile game</p>
+                        <div class="content">
+                            <p>Graph Blitz is a small mobile game for Android based on the graph colouring game and
+                                online
+                                graph colouring. The primary strategy used by the AI is the Activation Strategy, a
+                                description of which is available in my <a href="#honors_thesis">honors thesis</a>. </p>
+                            <p>This is <strong>prerelease</strong> version of my game. You can have a go by installing
+                                the
+                                apk.</p>
+                        </div>
+                        <a href="https://drive.google.com/drive/folders/1-BJsQ4X9cS2vKYMgBYDT7JVDdg-_9-VB?usp=sharing"
+                           target="_blank" rel="noopener noreferrer" class="button" onclick="gtag('event', 'download_apk' , {'apk': 'GraphBlitz'})">
+                            Download APK
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="research">
+        <h1 class="title is-2">Research</h1>
+        <hr>
+        <div id="research_cards" class="row columns is-multiline">
+            <div class="column is-12">
+                <div class="card large " id="honors_thesis">
+                    <div class="card-content">
+                        <p class="title is-4 no-padding">Graph Algorithms with Hostile
+                            Partners</p>
+                        <p class="subtitle is-6">Honors Thesis</p>
+                        <div class="content">
+                            <strong>Abstract: </strong>
+                            A graph algorithm with a hostile partner is a game played between two players,
+                            Alice and Bob. In each game Alice and Bob take it in turns to construct some
+                            object. Alice wins if the object has a specific property, and Bob wins if it doesn't.
+                            In this report we will explore a variety of games along with variations that allow
+                            Alice and Bob to play more than once per turn. We will also examine various
+                            strategies for both Alice and Bob. And, for each strategy we will see under what
+                            conditions Alice or Bob will always win. The four main games we will consider
+                            are; the dominating game, the independent dominating game, the colouring game,
+                            and the marking game.
+                        </div>
+
+                        <a href="res/Graph%20Algorithms%20with%20Hostile%20Partners.pdf" download target="_blank"
+                           class="button " onclick="gtag('event', 'download_pdf' , {'pdf': 'honors_report'})">
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</section>
+<footer class="footer mt-6">
+    <div class="container has-text-centered">
+        <a href="https://www.facebook.com/matthew.askes/" rel="nofollow noopener noreferrer"
+           onclick="gtag('event', 'goto_facebook' , {'source': 'social_links'})">
+                <span class="icon is-large has-text-dark">
+                    <svg class="image is-32x32">
+                        <use href="res/logo-facebook.svg#facebook"/>
+                    </svg>
+                </span>
+        </a>
+        <a href="https://github.com/askes5" rel="nofollow  noopener noreferrer"
+           onclick="gtag('event', 'goto_github' , {'source': 'social_links', 'page': 'home'})">
+                <span class="icon is-large has-text-dark">
+                     <svg class="image is-32x32">
+                        <use href="res/logo-github.svg#github"/>
+                    </svg>
+                </span>
+        </a>
+        <a href="https://www.instagram.com/matthewaskes/" rel="nofollow  noopener noreferrer"
+           onclick="gtag('event', 'goto_instagram' , {'source': 'social_links'})">
+                <span class="icon is-large has-text-dark">
+                    <svg class="image is-32x32">
+                        <use href="res/logo-instagram.svg#instagram"/>
+                    </svg>
+                </span>
+        </a>
+        <a href="mailto:matthew.askes@sms.vuw.ac.nz" target="_blank" rel="nofollow  noopener noreferrer"
+           onclick="gtag('event', 'mailto' , {'source': 'social_links'})">
+                <span class="icon is-large has-text-dark" >
+<!--                     <img class="image is-32x32" src="res/send.svg"  alt="Send email"/>-->
+                    <svg class="image is-32x32 " >
+                        <use href="res/mail.svg#mail"/>
+                    </svg>
+                </span>
+        </a>
+        <br>
+        <br>
+        <p class="has-text-grey-light">
+            Copyright 2021 &copy; Matthew Askes
+        </p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="lib/main.js"></script>
+</body>
+
+</html>
